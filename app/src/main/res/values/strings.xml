@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trip Lampung</string>
+
+    <string name="btnNext">Lanjut</string>
+    <string name="btnMulai">Masuk</string>
+    <string name="cardTempatWisata">Tempat Wisata</string>
+    <string name="cardGallery">Gallery</string>
+</resources>
