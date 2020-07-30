@@ -61,6 +61,8 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ViewHolder
                         Intent intent = new Intent(context, DetailWisata.class);
                         intent.putExtra("id", listWisata.get(position).getId_wisata());
                         intent.putExtra("title", listWisata.get(position).getWisata());
+                        intent.putExtra("info_wisata", listWisata.get(position).getInfo_wisata());
+                        intent.putExtra("lokasi", listWisata.get(position).getLokasi_wisata());
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(intent);
                     }

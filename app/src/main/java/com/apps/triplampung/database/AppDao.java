@@ -5,6 +5,8 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
+import java.util.List;
+
 @Dao
 public interface AppDao {
 
@@ -14,6 +16,12 @@ public interface AppDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void addWisata(WisataEntity wisataEntity);
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void addInfoWisata(WisataEntity wisataEntity);
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void addLokasiWisata(WisataEntity wisataEntity);
 
     @Query("SELECT * FROM table_wisata")
     WisataEntity[] showWisata();
@@ -26,8 +34,12 @@ public interface AppDao {
     void addDetailPahwang(DetailWisataEntity detailWisataEntity);
 
     @Query("SELECT * FROM table_detail_wisata")
-    DetailWisataEntity[] showDetailPuncakMas();
+    List<DetailWisataEntity> showImage();
 
-    @Query("SELECT * FROM table_detail_wisata")
-    DetailWisataEntity[] showDetailPahwang();
+    // Gallery Entity
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void addImageGallery(GalleryEntity galleryEntity);
+
+    @Query("SELECT * FROM table_gallery")
+    List<GalleryEntity> showImageGallery();
 }

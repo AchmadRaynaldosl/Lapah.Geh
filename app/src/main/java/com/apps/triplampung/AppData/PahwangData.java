@@ -11,9 +11,10 @@ import com.apps.triplampung.database.DetailWisataEntity;
 public class PahwangData {
 
     private static int[] image_pahwang = {
-            R.drawable.pahwang1,
-            R.drawable.pahwang2,
-            R.drawable.pahwang3
+            R.drawable.puncakmas2,
+            R.drawable.puncakmas2,
+            R.drawable.puncakmas2,
+            R.drawable.pahwang4
     };
 
     public static void prepareData(Context context){

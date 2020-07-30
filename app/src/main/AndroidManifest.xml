@@ -13,20 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
 
-        <activity android:name=".DetailWisata"
+        <activity
+            android:name=".ShowFotoWisata"
+            android:parentActivityName=".GalleryWisataActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GalleryWisataActivity" />
+        </activity>
+
+        <activity
+            android:name=".DetailWisata"
             android:parentActivityName=".TempatWisataActivity"
             tools:targetApi="jelly_bean">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TempatWisataActivity"/>
-
+                android:value=".TempatWisataActivity" />
         </activity>
 
-        <activity android:name=".GalleryWisataActivity" />
-
         <activity
-            android:name=".TempatWisataActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".GalleryWisataActivity"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean">
             <meta-data
@@ -34,8 +40,16 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity
+            android:name=".TempatWisataActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".MainActivity" />
-
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">

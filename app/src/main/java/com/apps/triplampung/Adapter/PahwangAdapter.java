@@ -16,19 +16,19 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class PuncakMasAdapter extends RecyclerView.Adapter<PuncakMasAdapter.ViewHolder> {
+public class PahwangAdapter extends RecyclerView.Adapter<PahwangAdapter.ViewHolder> {
 
     private Context context;
     private List<DetailWisataEntity> detailWisataEntities;
 
-    public PuncakMasAdapter(Context context, List<DetailWisataEntity> detailWisataEntities) {
+    public PahwangAdapter(Context context, List<DetailWisataEntity> detailWisataEntities) {
         this.context = context;
         this.detailWisataEntities = detailWisataEntities;
     }
 
     @NonNull
     @Override
-    public PuncakMasAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public PahwangAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.foto_wisata_item, null);
 
@@ -36,9 +36,9 @@ public class PuncakMasAdapter extends RecyclerView.Adapter<PuncakMasAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PuncakMasAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PahwangAdapter.ViewHolder holder, int position) {
         Glide.with(context)
-                .load(detailWisataEntities.get(position).getImg_puncakmas())
+                .load(detailWisataEntities.get(position).getImg_pahwang())
                 .into(holder.image_detail_wisata);
     }
 

@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class DetailWisataEntity {
 
     @PrimaryKey
-    @ColumnInfo(name = "image_wisata")
+    @ColumnInfo(name = "img_puncakmas")
     private int img_puncakmas;
     @ColumnInfo(name = "img_pahwang")
     private int img_pahwang;

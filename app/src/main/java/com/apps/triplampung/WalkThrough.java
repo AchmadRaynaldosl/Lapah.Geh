@@ -50,7 +50,7 @@ public class WalkThrough extends AppCompatActivity {
         btnMulaiAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.button_animation);
 
         final List<WalkthroughModel> listItem = new ArrayList<>();
-        listItem.add(new WalkthroughModel("page1","",R.drawable.pesawat));
+        listItem.add(new WalkthroughModel("Mengenal Wisata Lampung","",R.drawable.pesawat));
         listItem.add(new WalkthroughModel("page2","",R.drawable.wisata));
 
         walkthroughAdapter = new WalkthroughAdapter(this, listItem);

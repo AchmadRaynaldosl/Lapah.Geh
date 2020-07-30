@@ -14,6 +14,26 @@ public class WisataEntity {
     private int id_wisata;
     @ColumnInfo(name = "wisata")
     private String wisata;
+    @ColumnInfo(name = "info_wisata")
+    private String info_wisata;
+    @ColumnInfo(name = "lokasi_wisata")
+    private String lokasi_wisata;
+
+    public String getLokasi_wisata() {
+        return lokasi_wisata;
+    }
+
+    public void setLokasi_wisata(String lokasi_wisata) {
+        this.lokasi_wisata = lokasi_wisata;
+    }
+
+    public String getInfo_wisata() {
+        return info_wisata;
+    }
+
+    public void setInfo_wisata(String info_wisata) {
+        this.info_wisata = info_wisata;;
+    }
 
     public int getId_wisata() {
         return id_wisata;

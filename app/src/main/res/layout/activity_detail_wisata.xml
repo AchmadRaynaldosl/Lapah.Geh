@@ -17,6 +17,8 @@
             android:layout_height="match_parent"/>
     </com.google.android.material.appbar.AppBarLayout>
 
+
     <include layout="@layout/content_detail_wisata" />
+
 
 </LinearLayout>
